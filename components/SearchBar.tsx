@@ -1,3 +1,10 @@
+declare global {
+  interface Window {
+    SpeechRecognition: any;
+    webkitSpeechRecognition: any;
+  }
+}
+
 "use client";
 
 import { useState, useRef } from "react";
